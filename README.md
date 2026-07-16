@@ -1,7 +1,7 @@
 Respiration Artifact Filter
 =========================================
 
-I. How to Run the Program
+**I. How to Run the Program**
 
 Fully extract the entire folder. Do not copy or run the EXE file by itself.
 
@@ -29,7 +29,7 @@ SSIM Map frame i corresponds to frames i and i+1 of the original TIFF.
 
 
 
-II. Detection Modes
+**II. Detection Modes**
 
 Conservative: Minimizes the risk of removing genuine intestinal motility, but may miss mild respiratory artifacts.
 
@@ -41,7 +41,7 @@ Switching between modes does not reload the TIFF files or repeat the analysis. I
 
 
 
-III. Analysis Log
+**III. Analysis Log**
 
 After the analysis is complete, the log window in the main interface will display:
 
@@ -59,7 +59,7 @@ In the log, SSIM frame i corresponds to frames i and i+1 of the original TIFF.
 
 
 
-IV. Analysis Outputs and Cache
+**IV. Analysis Outputs and Cache**
 
 After analysis, the program will generate the following files in the folder containing the SSIM Map:
 
@@ -73,7 +73,7 @@ The cache file prevents unnecessary repeated calculations. The CSV file records 
 
 
 
-V. AF Output
+**V. AF Output**
 
 The currently selected mode determines which frames are removed. The output filename is always:
 
@@ -85,7 +85,7 @@ The output is saved as a 32-bit floating-point, ImageJ-compatible TIFF stack.
 
 
 
-VI. Automatic Detection Strategy
+**VI. Automatic Detection Strategy**
 
 The program performs an integrated analysis of:
 
@@ -103,7 +103,7 @@ The low-SSIM threshold is estimated automatically for each video. The program al
 
 
 
-VII. Important Notes
+**VII. Important Notes**
 
 Physically removing frames compresses the time axis. If strict analysis of the original time intervals is required, the original SSIM frame numbers recorded in the analysis CSV should be used.
 
@@ -111,7 +111,7 @@ The algorithm should continue to be validated using additional real datasets. Be
 
 
 
-VIII. Supported Formats and Systems
+**VIII. Supported Formats and Systems**
 
 64-bit Windows
 
@@ -125,7 +125,7 @@ The output can be opened as a 32-bit stack in ImageJ/Fiji
 
 
 
-IX. Runtime Environment
+**IX. Runtime Environment**
 
 This program does not install Python, Conda, or any system-level dependencies. It does not modify the system PATH, the Windows registry, or any existing scientific computing environment.
 
