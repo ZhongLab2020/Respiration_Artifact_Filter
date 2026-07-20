@@ -55,7 +55,7 @@ The program automatically distinguishes between two map conventions.
 Higher values indicate stronger frame-to-frame change. This category includes:
 
 - noise-normalized Energy maps;
-- Excess maps;
+- noise-normalized Excess maps;
 - $1-\mathrm{SSIM}$ maps; and
 - other non-negative change maps.
 
